@@ -13,4 +13,4 @@ and open the index.html file!
 2) For each round, choose your move: Rock, Paper, or Scissors
 3) Press Play!
 
-<img src="https://github.com/GSDV/rps/thumbnail.png" alt="Game" style="width:80%;"/>
+<img src="https://github.com/GSDV/rps/blob/main/thumbnail.png" alt="Game" style="width:80%;"/>
