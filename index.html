@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<link rel="stylesheet" href="rock-paper-scissors.css">
+<title>Rock Paper Scissors Game</title>
+</head>
+
+<body>
+<div id="limit-window-size">
+    <h1>
+        This Rock, Paper, Scissors game works best on a bigger screen size.
+        <br><br>
+        Please increase your window size or play on a bigger device.
+        <br><br>
+        :-(
+    </h1>
+
+    <br><br><br><br>
+
+    <button onclick="removeWindowSizeLimit()">Play On This Screen Size Anyway</button>
+</div>
+
+<h1>Rock Paper Scissors</h1>
+
+<div id="pop-up-box">
+    <div class="pop-up-box-content">
+        <h1 id="who-won-game"></h1>
+        <h2 id="smile-or-frown" style="font-size: 80px; padding: 0px; margin: 0px;"></h2>
+        <span id="close-pop-up-box" onclick="closePopUp()">OK</span>
+    </div>
+</div>
+
+
+
+<h2 id="countdown"></h2>
+<p id="lose-or-win"></p>
+
+
+<div class="rounds-left">
+    <p id="rounds-left">Rounds Left: 3</p>
+</div>
+<div class="matches-played">
+    <p id="matches-played"></p>
+</div>
+
+<br>
+
+<div class="computer-score">
+    <p id="computer-score"></p>
+</div>
+<div class="your-score">
+    <p id="your-score"></p>
+</div>
+
+
+
+
+
+<div class="centering">
+
+    <div class="half-div">
+        <h3>You</h3>
+
+        <img id="blue-icon" src="./icons/blue-rock.png">
+
+        <p id="user-selection">Rock</p>
+        <div style="display: flex;">
+            <div class="user-move-div">
+                <label for="user-move" id="dropdwon-text">Choose A Move:</label>
+                <select id="user-move" class="user-move-class">
+                    <option value="rock" selected>Rock</option>
+                    <option value="paper">Paper</option>
+                    <option value="scissors">Scissors</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="half-div">
+        <h3>Computer</h3>
+
+        <img id="red-icon" src="./icons/red-rock.png">
+
+        <p id="computer-move"></p>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="bottom-div">
+
+    <div class="total-user-wins-div">
+        <p id="total-user-wins">
+            Your Total Wins:
+            <br>
+            0
+        </p>
+    </div>
+
+
+    <div class="centering-button-and-dropdown">
+        <div class="game-mode-div">
+            <label for="game-mode" id="dropdwon-text">Choose A Game Mode:</label>
+            <select id="game-mode">
+                <option value="three" selected>Best out of 3</option>
+                <option value="five">Best out of 5</option>
+                <option value="infinite">Infinite Mode</option>
+                <option value="boring">Boring Mode</option>
+                <option value="frustrating">Frustrating Mode</option>
+            </select>
+        </div>
+        <button id="play-button" class="play-button-class" onclick="playGame()">Play!</button>
+    </div>
+
+
+    <div class="total-computer-wins-div">
+        <p id="total-computer-wins">
+            Computer Total Wins:
+            <br>
+            0
+        </p>
+    </div>
+
+</div>
+
+
+
+<script src="rock-paper-scissors.js"></script>
+</body>
+</html>
