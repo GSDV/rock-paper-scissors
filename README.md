@@ -1,7 +1,7 @@
 # Rock Paper Scissors
 Play against the computer in this HTML Rock Paper Scissors with smooth CSS animations. Tracks all time wins and matches played.
 
-## How to Run
+## Setup
 Simply run
  ```bash
  git clone https://github.com/GSDV/rps.git
