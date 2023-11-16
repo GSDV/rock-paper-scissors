@@ -4,7 +4,7 @@ Play against the computer in this HTML Rock Paper Scissors with smooth CSS anima
 ## Setup
 Simply run
  ```bash
- git clone https://github.com/GSDV/rps.git
+ git clone https://github.com/GSDV/rock-paper-scissors.git
  ```
 and open the index.html file!
 
